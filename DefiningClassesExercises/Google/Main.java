@@ -55,9 +55,12 @@ public class Main {
 
         String outputForCompany = personToPrint.getCompany() == null ? "" : String.valueOf(personToPrint.getCompany());
 
-        System.out.printf("%s%nCompany:%s%nCar:%s", personToPrint.getName(), outputForCompany, personToPrint.getCar());
+        /*System.out.printf("%s%nCompany:%s%nCar:%s", personToPrint.getName(), outputForCompany, personToPrint.getCar());
         personToPrint.printAllPokemon(personToPrint.getPokemonList());
         personToPrint.printAllParents(personToPrint.getParentsList());
         personToPrint.printAllChildren(personToPrint.getChildrenList());
+
+         */
+        System.out.println(personToPrint);
     }
 }

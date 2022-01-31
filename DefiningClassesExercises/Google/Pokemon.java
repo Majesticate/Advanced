@@ -11,7 +11,7 @@ public class Pokemon {
 
     @Override
     public String toString() {
-        return String.format("%n%s %s", this.name, this.element);
+        return String.format("%s %s", this.name, this.element);
     }
 
     public String getName() {

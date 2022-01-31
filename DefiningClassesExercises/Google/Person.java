@@ -68,13 +68,43 @@ public class Person {
         this.parentsList = parentsList;
     }
 
-
     @Override
     public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(name).append("\n");
+        stringBuilder.append("Company:").append("\n");
+        if (company != null){
+            stringBuilder.append(company).append("\n");
+        }
+        stringBuilder.append("Car:").append("\n");
+        if (car != null){
+            stringBuilder.append(car).append("\n");
+        }
+        stringBuilder.append("Pokemon:").append("\n");
+        for (Pokemon pokemon : pokemonList) {
+            stringBuilder.append(pokemon).append("\n");;
+        }
+
+        stringBuilder.append("Parents:").append("\n");
+        for (Parent parent : parentsList) {
+            stringBuilder.append(parent).append("\n");;
+        }
+        stringBuilder.append("Children:").append("\n");
+        for (Children children : childrenList) {
+            stringBuilder.append(children).append("\n");;
+        }
+        return stringBuilder.toString();
+    }
+
+
+    //@Override
+    /*public String toString() {
         //%nPokemon:%s%nParents:%s%nChildren:%s%n
         return String.format("%s%nCompany:%s%nCar:%s%n",
                 this.name, this.company, this.car);
     }
+
+     */
 
     public void printAllPokemon(List<Pokemon> pokemon) {
         System.out.println();

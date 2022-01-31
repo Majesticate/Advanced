@@ -25,7 +25,7 @@ public class Company {
 
     @Override
     public String toString() {
-        return this.nameOfCompany == null ? "" : String.format("%n%s %s %.2f" ,this.nameOfCompany ,this.companyDepartment , this.salary);
-
+        //return this.nameOfCompany == null ? "" : String.format("%n%s %s %.2f" ,this.nameOfCompany ,this.companyDepartment , this.salary);
+        return String.format("%s %s %.2f" ,this.nameOfCompany ,this.companyDepartment , this.salary);
     }
 }

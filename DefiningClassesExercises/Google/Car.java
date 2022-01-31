@@ -19,7 +19,8 @@ public class Car {
 
     @Override
     public String toString() {
-        return this.modelOfCar == null ? "" : String.format("%n%s %d", this.modelOfCar , this.hp);
+        //return this.modelOfCar == null ? "" : String.format("%n%s %d", this.modelOfCar , this.hp);
+        return String.format("%s %d", this.modelOfCar , this.hp);
     }
 
 }
