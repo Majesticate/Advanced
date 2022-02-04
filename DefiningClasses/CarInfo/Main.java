@@ -1,4 +1,4 @@
-package CarConstructor;
+package CarInfo;
 
 import java.util.ArrayList;
 import java.util.List;
