@@ -1,4 +1,4 @@
-package CarConstructor;
+package CarConstructors;
 
 public class Car {
     private String brand;
